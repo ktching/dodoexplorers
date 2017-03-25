@@ -1,0 +1,17 @@
+<%= form_for(justfortest) do |f| %>
+  <% if justfortest.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(justfortest.errors.count, "error") %> prohibited this justfortest from being saved:</h2>
+
+      <ul>
+      <% justfortest.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

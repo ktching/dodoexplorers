@@ -1,0 +1,2 @@
+module JustfortestsHelper
+end

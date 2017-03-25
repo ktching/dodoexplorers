@@ -1,0 +1,97 @@
+/* To extend article body to fit entire width with the removal of right column*/
+@media (min-width: 992px) {
+  .col-md-8 {
+    width: 100% !important; 
+  }
+}
+@media (min-width: 768px) {
+  .col-md-8 {
+    width: 100% !important; 
+  }
+
+}
+@media (min-width: 0px) {
+  .post-excerpt img {
+  	width: 100% !important;
+  	height: auto !important;
+  }
+}
+@media (max-width: 992px) {
+  .post-excerpt img {
+  	width: 100% !important;
+  	height: auto !important;
+  }
+}
+@media (min-width: 992px) {
+  .post-excerpt img {
+  	width: 60% !important;
+  	height: auto !important;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+.post-excerpt h1 {
+  font-size: 36px !important;
+  margin-top: 10px !important;
+  margin-bottom: 30px !important;
+}
+
+.post-excerpt h2 {
+  font-size: 18px !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  font-family: 'Ubuntu', 'Arial', sans-serif;
+  line-height: 1.5;
+  color: #2d2d2d;
+
+}
+
+.post-excerpt h3 {
+  margin-bottom: 20px !important;
+	text-align: center !important;
+  font-size: 1em !important;
+  font-style: italic !important;
+  font-weight: lighter !important;
+}
+.post-excerpt img {
+  margin-top: 20px !important;
+}
+
+
+
+
+
+.bannerimage {
+	width: 100% !important;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+}
+
+.banner_image {
+	width: 100% !important;
+	margin-left: 0%;
+    margin-right: 0%;
+}
+
+
+p {
+	font-size:18px;
+
+}
+
+.hover-mask h3 {
+	color: #ffffff !important;
+}
+
+.post-meta {
+	background-color: grey !important;
+	color: white !important;
+
+}
+
+
+
+
+    
+

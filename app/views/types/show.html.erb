@@ -1,0 +1,56 @@
+    
+    <!--<% if @articles.each do |article| %>
+    	<h3><%= link_to article.title, article %></h3>
+    	<p><%= article.body %></p>
+    <% end.empty? %>
+    	<p> Sorry no articles available in this category</p>
+    <% end %>
+    	<%= link_to "Back to Home", home_path %>
+    	-->
+
+
+    <div class="fh5co-hero">
+      <div class="fh5co-overlay"></div>
+      <div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(/assets/listing-rinjani.jpg);">
+        <!--<div class="desc animate-box">-->
+        <div>
+          <!--<h2>Go where your heart takes you</h2>-->
+          <!--<span><a class="btn btn-primary btn-lg" href="#">Get Started</a></span>-->
+          <h1><%= @type.name %></h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Listing -->
+    <div class="fh5co-listing">
+      <div class="container">
+        <div class="row">
+
+
+          <% if @articles.each do |article| %>
+
+          	<div class="col-md-4 col-sm-4 fh5co-item-wrap">
+          		<%= link_to article, {class: 'fh5co-listing-item'} do%>
+          			<%= image_tag("listing-img-6.jpg", :class=>"img-responsive")%>
+          			<div class="fh5co-listing-copy">
+		                <div class="fh5co-listing-copy">
+			                <h2><%= article.title %></h2>
+			      			<span class="icon">
+				                <i class="icon-chevron-right"></i>
+				            </span>
+			            </div>
+			        </div>
+			        <div class="fh5co-listing-kt-item-exerpt"><%= article.title %></div> 
+          		<% end %>
+          	</div>
+		  <% end.empty? %>
+	    	<p> Sorry no articles available in this category</p>
+	      <% end %>	
+
+      	</div><!-- Row -->
+     
+
+      </div>
+	  <!-- Container -->
+    </div>
+    <!-- Fh5co-listing -->

@@ -1,0 +1,1 @@
+json.partial! "justfortests/justfortest", justfortest: @justfortest

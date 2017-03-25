@@ -1,0 +1,12 @@
+/* To extend article body to fit entire width with the removal of right column*/
+.note .media-wrapper {
+	border: none !important;
+}
+.note {
+	border: none !important;
+}
+.navbar {
+	border-radius:0px !important;
+	border: none !important;
+    border-bottom: 1px solid #2d2d2d !important;
+}

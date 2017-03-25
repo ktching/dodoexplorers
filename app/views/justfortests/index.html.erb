@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Justfortests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @justfortests.each do |justfortest| %>
+      <tr>
+        <td><%= link_to 'Show', justfortest %></td>
+        <td><%= link_to 'Edit', edit_justfortest_path(justfortest) %></td>
+        <td><%= link_to 'Destroy', justfortest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Justfortest', new_justfortest_path %>

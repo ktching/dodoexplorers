@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<h1>Types#index</h1>
+<p>Find me in app/views/types/index.html.erb</p>
+
+<html>
+    <h1>Hello! This is Types HTML</h1>
+        <% @types.each do |type| %>
+            <h3><%= link_to type.name, type %></h3>
+            <%= type.image.html_safe %>
+
+        <% end %>
+    <p><%= @content1 %></p>
+</html>

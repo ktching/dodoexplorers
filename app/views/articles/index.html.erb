@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+<html>
+    <h1>Hello! This is article HTML</h1>
+        <% @articles.each do |article| %>
+            <h3><%= link_to article.title, article %></h3>
+            <p><%= article.teaser %></p>
+            <p><%= article.updated_at %></p>
+        <% end %>
+    <p><%= @content1 %></p>
+</html>
